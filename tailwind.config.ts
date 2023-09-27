@@ -1,6 +1,6 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+import type { Config } from "tailwindcss"
 
-import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
 const config: Config = {
   content: [
@@ -11,13 +11,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "rgb(var(--background))",
+        background: "#0a0a0a",
+        foreground: "#fafafa",
+        primary: "#0e5c86",
+        secondary: "#dd8c5c",
+        accent: "#e2f0d3",
+        muted: "#f7ccab",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        heading: ["var(--font-heading)", ...fontFamily.sans],
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config
