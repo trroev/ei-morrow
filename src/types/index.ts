@@ -1,6 +1,6 @@
 import { OpenGraphType } from "next/dist/lib/metadata/types/opengraph-types"
 
-interface NavItem {
+export interface NavItem {
   title: string
   href: string
 }
