@@ -37,7 +37,7 @@ export function MainNav({ items }: MainNavProps) {
           ))}
         </nav>
       </div>
-      <button className="flex items-center space-x-2 md:hidden hover:scale-110 duration-300"></button>
+      {/* <button className="flex items-center space-x-2 md:hidden hover:scale-110 duration-300"></button> */}
     </>
   )
 }
