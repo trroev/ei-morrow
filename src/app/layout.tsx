@@ -3,6 +3,8 @@ import "@/styles/globals.css"
 import type { Metadata } from "next"
 import { nanumMyeongjo, playfairDisplay, sourceSerif } from "@/assets/fonts"
 
+import { navConfig } from "@/config/nav"
+import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 
 export const metadata: Metadata = {
@@ -24,6 +26,7 @@ export default function RootLayout({
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
           <main className="flex-1">{children}</main>
+          <SiteFooter items={navConfig.navItems} />
         </div>
       </body>
     </html>
