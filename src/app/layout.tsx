@@ -8,6 +8,8 @@ import {
   sourceSerif,
 } from "@/assets/fonts"
 
+import { navConfig } from "@/config/nav"
+import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 
 export const metadata: Metadata = {
@@ -29,6 +31,7 @@ export default function RootLayout({
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
           <main className="flex-1 bg-slate-300">{children}</main>
+          <SiteFooter items={navConfig.navItems} />
         </div>
       </body>
     </html>
