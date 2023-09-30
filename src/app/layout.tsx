@@ -1,7 +1,12 @@
 import "@/styles/globals.css"
 
 import type { Metadata } from "next"
-import { nanumMyeongjo, playfairDisplay, sourceSerif } from "@/assets/fonts"
+import {
+  inter,
+  nanumMyeongjo,
+  playfairDisplay,
+  sourceSerif,
+} from "@/assets/fonts"
 
 import { SiteHeader } from "@/components/site-header"
 
@@ -19,11 +24,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body
-        className={`min-h-screen bg-background font-sans antialiased ${nanumMyeongjo.variable}`}
+        className={`min-h-screen bg-background font-sans antialiased ${nanumMyeongjo.variable} ${inter.variable}`}
       >
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 bg-slate-300">{children}</main>
         </div>
       </body>
     </html>

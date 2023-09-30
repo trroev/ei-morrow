@@ -27,6 +27,7 @@ const config: Config = {
       },
       fontFamily: {
         heading: ["var(--font-heading)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
     },
   },
