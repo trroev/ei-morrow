@@ -1,12 +1,7 @@
 import "@/styles/globals.css"
 
 import type { Metadata } from "next"
-import {
-  inter,
-  nanumMyeongjo,
-  playfairDisplay,
-  sourceSerif,
-} from "@/assets/fonts"
+import { inter, nanumMyeongjo } from "@/assets/fonts"
 
 import { navConfig } from "@/config/nav"
 import { SiteFooter } from "@/components/site-footer"
