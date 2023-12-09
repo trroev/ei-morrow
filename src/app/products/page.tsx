@@ -1,3 +1,3 @@
 export default function ProductsPage() {
-  return <h1 className="font-medium font-heading text-6xl">Products Page</h1>
+  return <h1 className="font-heading text-6xl font-medium">Products Page</h1>
 }

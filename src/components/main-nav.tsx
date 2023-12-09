@@ -24,7 +24,7 @@ export function MainNav({ items }: MainNavProps) {
           {siteConfig.title}
         </span>
       </Link>
-      <nav className="hidden gap-6 md:flex ml-auto">
+      <nav className="ml-auto hidden gap-6 md:flex">
         {items?.map((item, index) => (
           <Link
             key={index}

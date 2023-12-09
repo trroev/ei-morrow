@@ -1,4 +1,4 @@
-import { SiteConfig } from "@/types";
+import { SiteConfig } from "@/types"
 
 export const siteConfig: SiteConfig = {
   title: "E. I. Morrow Co., Inc",
@@ -31,4 +31,4 @@ export const siteConfig: SiteConfig = {
   },
   links: "",
   manifest: "",
-};
+}

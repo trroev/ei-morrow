@@ -24,7 +24,7 @@ export function MobileNav({ items, onClose }: MobileNavProps) {
   }
 
   return (
-    <div className="fixed inset-0 top-16 z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md bg-background/75 animate-in slide-in-from-bottom-80 md:hidden">
+    <div className="fixed inset-0 top-16 z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto bg-background/75 p-6 pb-32 shadow-md animate-in slide-in-from-bottom-80 md:hidden">
       <div className="relative z-20 grid gap-6 rounded-md bg-background p-4 shadow-md">
         <Link
           href="/"
@@ -37,7 +37,7 @@ export function MobileNav({ items, onClose }: MobileNavProps) {
             height={75}
             alt="Logo for E. I. Morrow Co., Inc."
           />
-          <span className="hidden sm:inline-block font-heading font-medium">
+          <span className="hidden font-heading font-medium sm:inline-block">
             {siteConfig.title}
           </span>
         </Link>
@@ -46,7 +46,7 @@ export function MobileNav({ items, onClose }: MobileNavProps) {
             <Link
               key={index}
               href={item.href}
-              className="flex w-full items-center rounded-md p-2 text-sm text-foreground/70 font-medium transition-colors hover:text-foreground"
+              className="flex w-full items-center rounded-md p-2 text-sm font-medium text-foreground/70 transition-colors hover:text-foreground"
               onClick={handlLinkClick}
             >
               {item.title}

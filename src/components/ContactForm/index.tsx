@@ -65,7 +65,7 @@ export function ContactForm() {
           rows={6}
           required={true}
         />
-        <button className="inline-flex h-10 items-center justify-center rounded-md bg-slate-50 px-4 py-2 text-sm font-medium text-slate-950 duration-300 ease-in hover:bg-slate-50/70">
+        <button className="inline-flex h-10 items-center justify-center rounded-md border border-background bg-slate-300 px-4 py-2 text-sm font-medium text-background duration-300 ease-in hover:bg-slate-100/80">
           {pending ? "Submitting..." : "Submit"}
         </button>
       </form>

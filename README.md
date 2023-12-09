@@ -1,12 +1,8 @@
-
 # E. I. Morrow Co., Inc.
 
 **Check it out:** [E. I. Morrow](#)
 
-
 ## Features
-
-
 
 ## Tech Stack
 
@@ -25,7 +21,6 @@
 
 Clone the repo
 
-
 ## Contributors ✨
 
 <p>
@@ -36,6 +31,3 @@ Clone the repo
     <img src="https://github.com/trroev.png" alt="Trevor Mathiak" width="50" height="50" />
   </a>
 </p>
-
-
-

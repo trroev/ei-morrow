@@ -26,11 +26,14 @@ export function FormField({
     ...register(id),
     placeholder: placeholder,
     className:
-      "min-h-10 flex w-full rounded-md border border-slate-50/25 bg-slate-950 px-3 py-2 text-sm",
+      "min-h-10 flex w-full rounded-md border border-background bg-slate-300 placeholder:text-background/50 px-3 py-2 text-sm",
   }
   return (
     <div className="space-y-2">
-      <label htmlFor={id} className="text-sm font-medium leading-none">
+      <label
+        htmlFor={id}
+        className="text-sm font-medium leading-none text-background"
+      >
         {label}
         {required && <span className="text-red-500">*</span>}
       </label>

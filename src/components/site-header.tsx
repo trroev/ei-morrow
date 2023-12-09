@@ -21,7 +21,7 @@ export function SiteHeader() {
         <MainNav items={navConfig.navItems} />
         {nav && <MobileNav items={navConfig.navItems} onClose={handleNav} />}
         <button
-          className="flex items-center space-x-2 md:hidden hover:scale-110 duration-300"
+          className="flex items-center space-x-2 duration-300 hover:scale-110 md:hidden"
           onClick={handleNav}
         >
           {nav ? <Icons.close /> : <Icons.menu />}
